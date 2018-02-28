@@ -1,0 +1,2530 @@
+{
+  "contractName": "MedicalRecord",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_fullName",
+          "type": "bytes32"
+        },
+        {
+          "name": "_symptoms",
+          "type": "uint8"
+        }
+      ],
+      "name": "addAdmissionRecord",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_fullName",
+          "type": "bytes32"
+        }
+      ],
+      "name": "addDischargeRecord",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_fullName",
+          "type": "bytes32"
+        }
+      ],
+      "name": "recordExist",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6104008061001e6000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630774bde91461005c578063af5791011461009b578063d3205de2146100c2575b600080fd5b341561006757600080fd5b6100816004808035600019169060200190919050506100f5565b604051808215151515815260200191505060405180910390f35b34156100a657600080fd5b6100c060048080356000191690602001909190505061015c565b005b34156100cd57600080fd5b6100f360048080356000191690602001909190803560ff1690602001909190505061023c565b005b6000806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600084600019166000191681526020019081526020016000208054905014159050919050565b600060016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000846000191660001916815260200190815260200160002080549050039050426000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600084600019166000191681526020019081526020016000208281548110151561022357fe5b9060005260206000209060030201600201819055505050565b610244610332565b60606040519081016040528083600481111561025c57fe5b8152602001428152602001600081525090506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000846000191660001916815260200190815260200160002080548060010182816102d7919061035f565b9160005260206000209060030201600083909190915060008201518160000160006101000a81548160ff0219169083600481111561031157fe5b02179055506020820151816001015560408201518160020155505050505050565b6060604051908101604052806000600481111561034b57fe5b815260200160008152602001600081525090565b81548183558181151161038c5760030281600302836000526020600020918201910161038b9190610391565b5b505050565b6103d191905b808211156103cd57600080820160006101000a81549060ff02191690556001820160009055600282016000905550600301610397565b5090565b905600a165627a7a723058200724857a074ae644a544bb257e6601c597bbc5fbf4bd6d5fbc28701688a1fe180029",
+  "deployedBytecode": "0x606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630774bde91461005c578063af5791011461009b578063d3205de2146100c2575b600080fd5b341561006757600080fd5b6100816004808035600019169060200190919050506100f5565b604051808215151515815260200191505060405180910390f35b34156100a657600080fd5b6100c060048080356000191690602001909190505061015c565b005b34156100cd57600080fd5b6100f360048080356000191690602001909190803560ff1690602001909190505061023c565b005b6000806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600084600019166000191681526020019081526020016000208054905014159050919050565b600060016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000846000191660001916815260200190815260200160002080549050039050426000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600084600019166000191681526020019081526020016000208281548110151561022357fe5b9060005260206000209060030201600201819055505050565b610244610332565b60606040519081016040528083600481111561025c57fe5b8152602001428152602001600081525090506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000846000191660001916815260200190815260200160002080548060010182816102d7919061035f565b9160005260206000209060030201600083909190915060008201518160000160006101000a81548160ff0219169083600481111561031157fe5b02179055506020820151816001015560408201518160020155505050505050565b6060604051908101604052806000600481111561034b57fe5b815260200160008152602001600081525090565b81548183558181151161038c5760030281600302836000526020600020918201910161038b9190610391565b5b505050565b6103d191905b808211156103cd57600080820160006101000a81549060ff02191690556001820160009055600282016000905550600301610397565b5090565b905600a165627a7a723058200724857a074ae644a544bb257e6601c597bbc5fbf4bd6d5fbc28701688a1fe180029",
+  "sourceMap": "26:1177:2:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:1177:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1073:128;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;697:201;;;;;;;;;;;;;;;;;;;;;;;;;;;;;418:179;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1073:128;1136:4;1195:1;1155:6;:18;1162:10;1155:18;;;;;;;;;;;;;;;:29;1174:9;1155:29;;;;;;;;;;;;;;;;;:36;;;;:41;;1148:48;;1073:128;;;:::o;697:201::-;758:22;822:1;783:6;:18;790:10;783:18;;;;;;;;;;;;;;;:29;802:9;783:29;;;;;;;;;;;;;;;;;:36;;;;:40;758:65;;890:3;828:6;:18;835:10;828:18;;;;;;;;;;;;;;;:29;847:9;828:29;;;;;;;;;;;;;;;;;858:14;828:45;;;;;;;;;;;;;;;;;;;;:59;;:65;;;;697:201;;:::o;418:179::-;500:18;;:::i;:::-;521:24;;;;;;;;;527:9;521:24;;;;;;;;;;;;538:3;521:24;;;;543:1;521:24;;;500:45;;551:6;:18;558:10;551:18;;;;;;;;;;;;;;;:29;570:9;551:29;;;;;;;;;;;;;;;;;:41;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;586:5;551:41;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;418:179;;;:::o;26:1177::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.17;\n\ncontract MedicalRecord {\n  enum Symptoms {ChestPain, HeadAche, Vomiting, Sprain, Fractures}\n\n  struct Visit {\n    Symptoms symptoms;\n    uint256 admissionDate;\n    uint256 dischargeDate;\n  }\n\n  mapping(address => mapping(bytes32 => Visit[])) visits;\n\n  /**\n   * @dev Add an admission record\n   * @param  _fullName [Patient Full Name]\n   * @param  _symptoms     [Symptom of the visit]\n   */\n  function addAdmissionRecord(bytes32 _fullName, Symptoms _symptoms) external {\n    Visit memory visit = Visit(_symptoms, now, 0);\n    visits[msg.sender][_fullName].push(visit);\n  }\n\n  /**\n   * @dev Add a patient discharge record\n   * @param  _fullName [Patient Full Name]\n   */\n  function addDischargeRecord(bytes32 _fullName) external {\n   uint256 lastVisitIndex = visits[msg.sender][_fullName].length - 1;\n   visits[msg.sender][_fullName][lastVisitIndex].dischargeDate = now;\n  }\n\n  /**\n   * @dev Display if a patient has an admission record\n   * @param  _fullName [Patient Full Name]\n   * @return  Returns Yes if patient has an admission record\n   */\n  function recordExist(bytes32 _fullName) view external returns (bool) {\n    return visits[msg.sender][_fullName].length != 0;\n  }\n}\n",
+  "sourcePath": "/Users/fcheng/workspace/Personal/blockchain-examples/hospital_dapp/contracts/MedicalRecord.sol",
+  "ast": {
+    "absolutePath": "/Users/fcheng/workspace/Personal/blockchain-examples/hospital_dapp/contracts/MedicalRecord.sol",
+    "exportedSymbols": {
+      "MedicalRecord": [
+        390
+      ]
+    },
+    "id": 391,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 295,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 390,
+        "linearizedBaseContracts": [
+          390
+        ],
+        "name": "MedicalRecord",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "MedicalRecord.Symptoms",
+            "id": 301,
+            "members": [
+              {
+                "id": 296,
+                "name": "ChestPain",
+                "nodeType": "EnumValue",
+                "src": "68:9:2"
+              },
+              {
+                "id": 297,
+                "name": "HeadAche",
+                "nodeType": "EnumValue",
+                "src": "79:8:2"
+              },
+              {
+                "id": 298,
+                "name": "Vomiting",
+                "nodeType": "EnumValue",
+                "src": "89:8:2"
+              },
+              {
+                "id": 299,
+                "name": "Sprain",
+                "nodeType": "EnumValue",
+                "src": "99:6:2"
+              },
+              {
+                "id": 300,
+                "name": "Fractures",
+                "nodeType": "EnumValue",
+                "src": "107:9:2"
+              }
+            ],
+            "name": "Symptoms",
+            "nodeType": "EnumDefinition",
+            "src": "53:64:2"
+          },
+          {
+            "canonicalName": "MedicalRecord.Visit",
+            "id": 308,
+            "members": [
+              {
+                "constant": false,
+                "id": 303,
+                "name": "symptoms",
+                "nodeType": "VariableDeclaration",
+                "scope": 308,
+                "src": "140:17:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Symptoms_$301",
+                  "typeString": "enum MedicalRecord.Symptoms"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 302,
+                  "name": "Symptoms",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 301,
+                  "src": "140:8:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Symptoms_$301",
+                    "typeString": "enum MedicalRecord.Symptoms"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 305,
+                "name": "admissionDate",
+                "nodeType": "VariableDeclaration",
+                "scope": 308,
+                "src": "163:21:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 304,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "163:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 307,
+                "name": "dischargeDate",
+                "nodeType": "VariableDeclaration",
+                "scope": 308,
+                "src": "190:21:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 306,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "190:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Visit",
+            "nodeType": "StructDefinition",
+            "scope": 390,
+            "src": "121:95:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 315,
+            "name": "visits",
+            "nodeType": "VariableDeclaration",
+            "scope": 390,
+            "src": "220:54:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$_$",
+              "typeString": "mapping(address => mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref))"
+            },
+            "typeName": {
+              "id": 314,
+              "keyType": {
+                "id": 309,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "228:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "220:47:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$_$",
+                "typeString": "mapping(address => mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref))"
+              },
+              "valueType": {
+                "id": 313,
+                "keyType": {
+                  "id": 310,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "247:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "239:27:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$",
+                  "typeString": "mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref)"
+                },
+                "valueType": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 311,
+                    "name": "Visit",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 308,
+                    "src": "258:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Visit_$308_storage_ptr",
+                      "typeString": "struct MedicalRecord.Visit storage pointer"
+                    }
+                  },
+                  "id": 312,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "258:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Visit_$308_storage_$dyn_storage_ptr",
+                    "typeString": "struct MedicalRecord.Visit storage ref[] storage pointer"
+                  }
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 340,
+              "nodeType": "Block",
+              "src": "494:103:2",
+              "statements": [
+                {
+                  "assignments": [
+                    323
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 323,
+                      "name": "visit",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 341,
+                      "src": "500:18:2",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Visit_$308_memory_ptr",
+                        "typeString": "struct MedicalRecord.Visit memory"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 322,
+                        "name": "Visit",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 308,
+                        "src": "500:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Visit_$308_storage_ptr",
+                          "typeString": "struct MedicalRecord.Visit storage pointer"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 329,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 325,
+                        "name": "_symptoms",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 319,
+                        "src": "527:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Symptoms_$301",
+                          "typeString": "enum MedicalRecord.Symptoms"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 326,
+                        "name": "now",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 460,
+                        "src": "538:3:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "30",
+                        "id": 327,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "543:1:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_enum$_Symptoms_$301",
+                          "typeString": "enum MedicalRecord.Symptoms"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        }
+                      ],
+                      "id": 324,
+                      "name": "Visit",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 308,
+                      "src": "521:5:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_Visit_$308_storage_ptr_$",
+                        "typeString": "type(struct MedicalRecord.Visit storage pointer)"
+                      }
+                    },
+                    "id": 328,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "521:24:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Visit_$308_memory",
+                      "typeString": "struct MedicalRecord.Visit memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "500:45:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 337,
+                        "name": "visit",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 323,
+                        "src": "586:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Visit_$308_memory_ptr",
+                          "typeString": "struct MedicalRecord.Visit memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Visit_$308_memory_ptr",
+                          "typeString": "struct MedicalRecord.Visit memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 330,
+                            "name": "visits",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 315,
+                            "src": "551:6:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$_$",
+                              "typeString": "mapping(address => mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref))"
+                            }
+                          },
+                          "id": 334,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 331,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 458,
+                              "src": "558:3:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 332,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "sender",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "558:10:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "551:18:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$",
+                            "typeString": "mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref)"
+                          }
+                        },
+                        "id": 335,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 333,
+                          "name": "_fullName",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 317,
+                          "src": "570:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "551:29:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Visit_$308_storage_$dyn_storage",
+                          "typeString": "struct MedicalRecord.Visit storage ref[] storage ref"
+                        }
+                      },
+                      "id": 336,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "551:34:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Visit_$308_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct MedicalRecord.Visit storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 338,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "551:41:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 339,
+                  "nodeType": "ExpressionStatement",
+                  "src": "551:41:2"
+                }
+              ]
+            },
+            "id": 341,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addAdmissionRecord",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 320,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 317,
+                  "name": "_fullName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 341,
+                  "src": "446:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 316,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "446:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 319,
+                  "name": "_symptoms",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 341,
+                  "src": "465:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Symptoms_$301",
+                    "typeString": "enum MedicalRecord.Symptoms"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 318,
+                    "name": "Symptoms",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 301,
+                    "src": "465:8:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Symptoms_$301",
+                      "typeString": "enum MedicalRecord.Symptoms"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "445:39:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 321,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "494:0:2"
+            },
+            "scope": 390,
+            "src": "418:179:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 370,
+              "nodeType": "Block",
+              "src": "753:145:2",
+              "statements": [
+                {
+                  "assignments": [
+                    347
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 347,
+                      "name": "lastVisitIndex",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 371,
+                      "src": "758:22:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 346,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "758:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 357,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 356,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 348,
+                            "name": "visits",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 315,
+                            "src": "783:6:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$_$",
+                              "typeString": "mapping(address => mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref))"
+                            }
+                          },
+                          "id": 351,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 349,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 458,
+                              "src": "790:3:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 350,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "sender",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "790:10:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "783:18:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$",
+                            "typeString": "mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref)"
+                          }
+                        },
+                        "id": 353,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 352,
+                          "name": "_fullName",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 343,
+                          "src": "802:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "783:29:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Visit_$308_storage_$dyn_storage",
+                          "typeString": "struct MedicalRecord.Visit storage ref[] storage ref"
+                        }
+                      },
+                      "id": 354,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "783:36:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "-",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "31",
+                      "id": 355,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "822:1:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "783:40:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "758:65:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 368,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 358,
+                              "name": "visits",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 315,
+                              "src": "828:6:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$_$",
+                                "typeString": "mapping(address => mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref))"
+                              }
+                            },
+                            "id": 363,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "expression": {
+                                "argumentTypes": null,
+                                "id": 359,
+                                "name": "msg",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 458,
+                                "src": "835:3:2",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_magic_message",
+                                  "typeString": "msg"
+                                }
+                              },
+                              "id": 360,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "sender",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": null,
+                              "src": "835:10:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "828:18:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$",
+                              "typeString": "mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref)"
+                            }
+                          },
+                          "id": 364,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 361,
+                            "name": "_fullName",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 343,
+                            "src": "847:9:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "828:29:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_struct$_Visit_$308_storage_$dyn_storage",
+                            "typeString": "struct MedicalRecord.Visit storage ref[] storage ref"
+                          }
+                        },
+                        "id": 365,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 362,
+                          "name": "lastVisitIndex",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 347,
+                          "src": "858:14:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "828:45:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Visit_$308_storage",
+                          "typeString": "struct MedicalRecord.Visit storage ref"
+                        }
+                      },
+                      "id": 366,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "dischargeDate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 307,
+                      "src": "828:59:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 367,
+                      "name": "now",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 460,
+                      "src": "890:3:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "828:65:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 369,
+                  "nodeType": "ExpressionStatement",
+                  "src": "828:65:2"
+                }
+              ]
+            },
+            "id": 371,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addDischargeRecord",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 344,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 343,
+                  "name": "_fullName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 371,
+                  "src": "725:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 342,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "725:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "724:19:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 345,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "753:0:2"
+            },
+            "scope": 390,
+            "src": "697:201:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 388,
+              "nodeType": "Block",
+              "src": "1142:59:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 386,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 378,
+                            "name": "visits",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 315,
+                            "src": "1155:6:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$_$",
+                              "typeString": "mapping(address => mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref))"
+                            }
+                          },
+                          "id": 381,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 379,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 458,
+                              "src": "1162:3:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 380,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "sender",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1162:10:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1155:18:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$",
+                            "typeString": "mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref)"
+                          }
+                        },
+                        "id": 383,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 382,
+                          "name": "_fullName",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 373,
+                          "src": "1174:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "1155:29:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Visit_$308_storage_$dyn_storage",
+                          "typeString": "struct MedicalRecord.Visit storage ref[] storage ref"
+                        }
+                      },
+                      "id": 384,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1155:36:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 385,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1195:1:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1155:41:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 377,
+                  "id": 387,
+                  "nodeType": "Return",
+                  "src": "1148:48:2"
+                }
+              ]
+            },
+            "id": 389,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "recordExist",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 374,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 373,
+                  "name": "_fullName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 389,
+                  "src": "1094:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 372,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1094:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1093:19:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 377,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 376,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 389,
+                  "src": "1136:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 375,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1136:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1135:6:2"
+            },
+            "scope": 390,
+            "src": "1073:128:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 391,
+        "src": "26:1177:2"
+      }
+    ],
+    "src": "0:1204:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/fcheng/workspace/Personal/blockchain-examples/hospital_dapp/contracts/MedicalRecord.sol",
+    "exportedSymbols": {
+      "MedicalRecord": [
+        390
+      ]
+    },
+    "id": 391,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 295,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 390,
+        "linearizedBaseContracts": [
+          390
+        ],
+        "name": "MedicalRecord",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "MedicalRecord.Symptoms",
+            "id": 301,
+            "members": [
+              {
+                "id": 296,
+                "name": "ChestPain",
+                "nodeType": "EnumValue",
+                "src": "68:9:2"
+              },
+              {
+                "id": 297,
+                "name": "HeadAche",
+                "nodeType": "EnumValue",
+                "src": "79:8:2"
+              },
+              {
+                "id": 298,
+                "name": "Vomiting",
+                "nodeType": "EnumValue",
+                "src": "89:8:2"
+              },
+              {
+                "id": 299,
+                "name": "Sprain",
+                "nodeType": "EnumValue",
+                "src": "99:6:2"
+              },
+              {
+                "id": 300,
+                "name": "Fractures",
+                "nodeType": "EnumValue",
+                "src": "107:9:2"
+              }
+            ],
+            "name": "Symptoms",
+            "nodeType": "EnumDefinition",
+            "src": "53:64:2"
+          },
+          {
+            "canonicalName": "MedicalRecord.Visit",
+            "id": 308,
+            "members": [
+              {
+                "constant": false,
+                "id": 303,
+                "name": "symptoms",
+                "nodeType": "VariableDeclaration",
+                "scope": 308,
+                "src": "140:17:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Symptoms_$301",
+                  "typeString": "enum MedicalRecord.Symptoms"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 302,
+                  "name": "Symptoms",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 301,
+                  "src": "140:8:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Symptoms_$301",
+                    "typeString": "enum MedicalRecord.Symptoms"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 305,
+                "name": "admissionDate",
+                "nodeType": "VariableDeclaration",
+                "scope": 308,
+                "src": "163:21:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 304,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "163:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 307,
+                "name": "dischargeDate",
+                "nodeType": "VariableDeclaration",
+                "scope": 308,
+                "src": "190:21:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 306,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "190:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Visit",
+            "nodeType": "StructDefinition",
+            "scope": 390,
+            "src": "121:95:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 315,
+            "name": "visits",
+            "nodeType": "VariableDeclaration",
+            "scope": 390,
+            "src": "220:54:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$_$",
+              "typeString": "mapping(address => mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref))"
+            },
+            "typeName": {
+              "id": 314,
+              "keyType": {
+                "id": 309,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "228:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "220:47:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$_$",
+                "typeString": "mapping(address => mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref))"
+              },
+              "valueType": {
+                "id": 313,
+                "keyType": {
+                  "id": 310,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "247:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "239:27:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$",
+                  "typeString": "mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref)"
+                },
+                "valueType": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 311,
+                    "name": "Visit",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 308,
+                    "src": "258:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Visit_$308_storage_ptr",
+                      "typeString": "struct MedicalRecord.Visit storage pointer"
+                    }
+                  },
+                  "id": 312,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "258:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Visit_$308_storage_$dyn_storage_ptr",
+                    "typeString": "struct MedicalRecord.Visit storage ref[] storage pointer"
+                  }
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 340,
+              "nodeType": "Block",
+              "src": "494:103:2",
+              "statements": [
+                {
+                  "assignments": [
+                    323
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 323,
+                      "name": "visit",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 341,
+                      "src": "500:18:2",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Visit_$308_memory_ptr",
+                        "typeString": "struct MedicalRecord.Visit memory"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 322,
+                        "name": "Visit",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 308,
+                        "src": "500:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Visit_$308_storage_ptr",
+                          "typeString": "struct MedicalRecord.Visit storage pointer"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 329,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 325,
+                        "name": "_symptoms",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 319,
+                        "src": "527:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_Symptoms_$301",
+                          "typeString": "enum MedicalRecord.Symptoms"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 326,
+                        "name": "now",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 460,
+                        "src": "538:3:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "30",
+                        "id": 327,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "543:1:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_enum$_Symptoms_$301",
+                          "typeString": "enum MedicalRecord.Symptoms"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        }
+                      ],
+                      "id": 324,
+                      "name": "Visit",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 308,
+                      "src": "521:5:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_Visit_$308_storage_ptr_$",
+                        "typeString": "type(struct MedicalRecord.Visit storage pointer)"
+                      }
+                    },
+                    "id": 328,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "521:24:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Visit_$308_memory",
+                      "typeString": "struct MedicalRecord.Visit memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "500:45:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 337,
+                        "name": "visit",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 323,
+                        "src": "586:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Visit_$308_memory_ptr",
+                          "typeString": "struct MedicalRecord.Visit memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Visit_$308_memory_ptr",
+                          "typeString": "struct MedicalRecord.Visit memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 330,
+                            "name": "visits",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 315,
+                            "src": "551:6:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$_$",
+                              "typeString": "mapping(address => mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref))"
+                            }
+                          },
+                          "id": 334,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 331,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 458,
+                              "src": "558:3:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 332,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "sender",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "558:10:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "551:18:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$",
+                            "typeString": "mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref)"
+                          }
+                        },
+                        "id": 335,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 333,
+                          "name": "_fullName",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 317,
+                          "src": "570:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "551:29:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Visit_$308_storage_$dyn_storage",
+                          "typeString": "struct MedicalRecord.Visit storage ref[] storage ref"
+                        }
+                      },
+                      "id": 336,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "551:34:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Visit_$308_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct MedicalRecord.Visit storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 338,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "551:41:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 339,
+                  "nodeType": "ExpressionStatement",
+                  "src": "551:41:2"
+                }
+              ]
+            },
+            "id": 341,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addAdmissionRecord",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 320,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 317,
+                  "name": "_fullName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 341,
+                  "src": "446:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 316,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "446:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 319,
+                  "name": "_symptoms",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 341,
+                  "src": "465:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Symptoms_$301",
+                    "typeString": "enum MedicalRecord.Symptoms"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 318,
+                    "name": "Symptoms",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 301,
+                    "src": "465:8:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Symptoms_$301",
+                      "typeString": "enum MedicalRecord.Symptoms"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "445:39:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 321,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "494:0:2"
+            },
+            "scope": 390,
+            "src": "418:179:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 370,
+              "nodeType": "Block",
+              "src": "753:145:2",
+              "statements": [
+                {
+                  "assignments": [
+                    347
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 347,
+                      "name": "lastVisitIndex",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 371,
+                      "src": "758:22:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 346,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "758:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 357,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 356,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 348,
+                            "name": "visits",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 315,
+                            "src": "783:6:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$_$",
+                              "typeString": "mapping(address => mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref))"
+                            }
+                          },
+                          "id": 351,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 349,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 458,
+                              "src": "790:3:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 350,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "sender",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "790:10:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "783:18:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$",
+                            "typeString": "mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref)"
+                          }
+                        },
+                        "id": 353,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 352,
+                          "name": "_fullName",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 343,
+                          "src": "802:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "783:29:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Visit_$308_storage_$dyn_storage",
+                          "typeString": "struct MedicalRecord.Visit storage ref[] storage ref"
+                        }
+                      },
+                      "id": 354,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "783:36:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "-",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "31",
+                      "id": 355,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "822:1:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "783:40:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "758:65:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 368,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 358,
+                              "name": "visits",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 315,
+                              "src": "828:6:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$_$",
+                                "typeString": "mapping(address => mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref))"
+                              }
+                            },
+                            "id": 363,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "expression": {
+                                "argumentTypes": null,
+                                "id": 359,
+                                "name": "msg",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 458,
+                                "src": "835:3:2",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_magic_message",
+                                  "typeString": "msg"
+                                }
+                              },
+                              "id": 360,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "sender",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": null,
+                              "src": "835:10:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "828:18:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$",
+                              "typeString": "mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref)"
+                            }
+                          },
+                          "id": 364,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 361,
+                            "name": "_fullName",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 343,
+                            "src": "847:9:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "828:29:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_struct$_Visit_$308_storage_$dyn_storage",
+                            "typeString": "struct MedicalRecord.Visit storage ref[] storage ref"
+                          }
+                        },
+                        "id": 365,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 362,
+                          "name": "lastVisitIndex",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 347,
+                          "src": "858:14:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "828:45:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Visit_$308_storage",
+                          "typeString": "struct MedicalRecord.Visit storage ref"
+                        }
+                      },
+                      "id": 366,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "dischargeDate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 307,
+                      "src": "828:59:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 367,
+                      "name": "now",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 460,
+                      "src": "890:3:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "828:65:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 369,
+                  "nodeType": "ExpressionStatement",
+                  "src": "828:65:2"
+                }
+              ]
+            },
+            "id": 371,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addDischargeRecord",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 344,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 343,
+                  "name": "_fullName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 371,
+                  "src": "725:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 342,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "725:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "724:19:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 345,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "753:0:2"
+            },
+            "scope": 390,
+            "src": "697:201:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 388,
+              "nodeType": "Block",
+              "src": "1142:59:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 386,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 378,
+                            "name": "visits",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 315,
+                            "src": "1155:6:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$_$",
+                              "typeString": "mapping(address => mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref))"
+                            }
+                          },
+                          "id": 381,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 379,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 458,
+                              "src": "1162:3:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 380,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "sender",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1162:10:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1155:18:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_array$_t_struct$_Visit_$308_storage_$dyn_storage_$",
+                            "typeString": "mapping(bytes32 => struct MedicalRecord.Visit storage ref[] storage ref)"
+                          }
+                        },
+                        "id": 383,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 382,
+                          "name": "_fullName",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 373,
+                          "src": "1174:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "1155:29:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Visit_$308_storage_$dyn_storage",
+                          "typeString": "struct MedicalRecord.Visit storage ref[] storage ref"
+                        }
+                      },
+                      "id": 384,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1155:36:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 385,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1195:1:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1155:41:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 377,
+                  "id": 387,
+                  "nodeType": "Return",
+                  "src": "1148:48:2"
+                }
+              ]
+            },
+            "id": 389,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "recordExist",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 374,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 373,
+                  "name": "_fullName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 389,
+                  "src": "1094:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 372,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1094:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1093:19:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 377,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 376,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 389,
+                  "src": "1136:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 375,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1136:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1135:6:2"
+            },
+            "scope": 390,
+            "src": "1073:128:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 391,
+        "src": "26:1177:2"
+      }
+    ],
+    "src": "0:1204:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {
+    "1519772551921": {
+      "events": {},
+      "links": {},
+      "address": "0xbebaf0755894940112873fe30f8fd1ee29b4f0bf",
+      "transactionHash": "0x555b667c07467b4edb40dcdeb5aa0649c20315819a5e5a660a19a959320e212c"
+    },
+    "1519785381118": {
+      "events": {},
+      "links": {},
+      "address": "0x1a3b3232ea3e1377c90d3ec81311f02264960386",
+      "transactionHash": "0xfb3f5619a7538b8fcc26bbcf83124113a944b29247f5707db32bd6bfc7ef274c"
+    }
+  },
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-02-28T03:40:19.374Z"
+}
